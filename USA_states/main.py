@@ -12,9 +12,9 @@ my_screen = Screen()
 my_screen.title("U.S States Quiz")
 
 #my_screen.bgcolor("cyan")
-my_screen.bgpic("./USA_states/blank_states_img.gif")
+my_screen.bgpic("./blank_states_img.gif")
 
-#my_tut.shape("./USA_states/blank_states_img.gif")
+#my_tut.shape("./blank_states_img.gif")
 
 # Getting coordinates from the map
 
@@ -32,7 +32,7 @@ while len(is_running) < 50:
 
     #Read Pandas
 
-    states_file = pd.read_csv("./USA_states/50_states.csv")
+    states_file = pd.read_csv("./50_states.csv")
     state_series = pd.Series(states_file["state"]).array
     # Check if state_name in states_file
 
